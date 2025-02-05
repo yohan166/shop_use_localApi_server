@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contents {
+  max-width: 1400px;
+  padding: 0 8px;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.contents .Product {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  padding: 8px;
+  border: 1px solid #bbbbbb;
+  cursor: pointer;
+}
+.contents .Product h3 {
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contents .Product h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.contents .Product .new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  border: 1px solid #000;
+  border-radius: 100%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.431372549);
+}
+.contents .Product .new + p {
+  margin-bottom: 10px;
+}
+.contents .Product ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+header {
+  width: 100%;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .login {
+  align-self: flex-end;
+}
+header .login a {
+  margin-left: 10px;
+}
+
+.cate {
+  position: relative;
+  padding: 8px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.cate ul {
+  display: flex;
+  gap: 20px;
+}
+.cate ul li {
+  cursor: pointer;
+}
+.cate .inputbox {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+.cate .inputbox input {
+  width: 180px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+.cate .inputbox button {
+  border: none;
+  background-color: transparent;
+}
+.cate .inputbox svg {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.Login {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 8px;
+}
+.Login .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+.Login .form .label {
+  font-weight: 700;
+}
+.Login .form input {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  padding: 4px 8px;
+  display: block;
+}
+.Login .form hr {
+  position: relative;
+  overflow: visible;
+  border: 1px solid #DCDCDC;
+  color: #DCDCDC;
+}
+.Login .form hr::after {
+  content: "또는";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  font-weight: 500;
+  background-color: #fff;
+  z-index: 999;
+  text-align: center;
+}
+.Login .form button {
+  width: 100%;
+  height: 58px;
+  background-color: #000;
+  color: #fff;
+  margin: 40px 0;
+  padding: 4px 8px;
+}
+
+.prodetail {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.prodetail button {
+  border: none;
+}
+.prodetail .i_l {
+  width: 60%;
+  padding: 30px;
+  overflow: hidden;
+}
+.prodetail .i_l img {
+  width: 100%;
+}
+.prodetail .i_l img:hover {
+  scale: 1.15;
+  transition: 0.2s;
+}
+.prodetail .i_r {
+  width: 50%;
+  padding: 30px 8px;
+}
+.prodetail .i_r span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.prodetail .i_r h2 {
+  margin-bottom: 30px;
+}
+.prodetail .i_r h3 {
+  margin-bottom: 30px;
+}
+.prodetail .i_r .s_button {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+}
+.prodetail .i_r .s_button button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+}
+.prodetail .i_r .s_button .active {
+  background-color: #000;
+  color: #fff;
+}
+.prodetail .i_r .num {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.prodetail .i_r .num > p {
+  width: 80px;
+  margin-bottom: 30px;
+}
+.prodetail .i_r .btnbox {
+  display: flex;
+  margin-bottom: 30px;
+}
+.prodetail .i_r .btnbox p {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+  border-top: 1px solid rgba(59, 59, 94, 0.6588235294);
+  border-bottom: 1px solid rgba(59, 59, 94, 0.6588235294);
+  font-weight: 700;
+}
+.prodetail .i_r .btnbox button {
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  border: 1px solid rgba(59, 59, 94, 0.6588235294);
+}
+.prodetail .i_r .price {
+  margin-top: 50px;
+}
+.prodetail .i_r .purchase {
+  width: 100%;
+  height: 110px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.prodetail .i_r .purchase button {
+  height: 50px;
+  font-weight: 700;
+  background-color: #4524DB;
+  color: #fff;
+  cursor: pointer;
+}
+.prodetail .i_r .purchase button:nth-of-type(1) {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=App.css.map */
