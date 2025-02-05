@@ -10,7 +10,7 @@ let initialState = {
 }
 
 export const getlist = createAsyncThunk("List/fetchAll", async() => {
-    const response = await axios.get("http://localhost:5000/products");
+    const response = await axios.get("https://my-json-server.typicode.com/yohan166/shop_use_localApi_server/products");
     return response.data;
 });
 
