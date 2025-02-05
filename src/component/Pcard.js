@@ -13,7 +13,7 @@ function Pcard({ item }) {
             {
                 item.new ? <p className='new'>new!</p> : ""
             }
-            <p class="size">SIZE</p>
+            <p className="size">SIZE</p>
             <ul>
                 {
                     item.size.map((s, idx) => (
